@@ -1,0 +1,31 @@
+Java Interview Questions
+
+1. Polymorphism
+
+Ability of Single Method name to represent the Multiple methods in the different classed that are related by inheritance. It Allows methods to be defined in a superclass and overridden by Subclass.
+
+Compile time Polymorphism: Method Overloading
+This occurs where multiple methods in the same class with same name but different parameters.
+It has same name but different Parameters
+It doesn’t require Inheritance since it occurs within Same class
+
+Runtime Polymorphism: Method overriding:
+This occurs when subclass provides a specific implementation of a method that is already present in its super class.
+It should have same name, same parameter and Same Return type
+It requires Inheritance
+
+2. Interface
+Interface is not a class,
+Every method in interface is Public abstract method by default
+Interface cannot be instantiated
+Variable should be Final and static
+It only implements the Methods to the Child Class
+It's not has the variable access from the Parent
+
+3. Abstract KeyWord
+Cannot create object of Abstract Class
+It's compulsory if the method is declared as Abstract then the class should be Abstract class
+It is not compulsory that have abstract class only Abstrct methods
+All the Abstract methodd should be implemented in its child class
+here we are able to create object only with Concrete class
+

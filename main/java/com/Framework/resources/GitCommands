@@ -1,0 +1,70 @@
+For adding Local repository to the Remote Repository
+
+PreRequisites:
+    1. Create a Remote Repository in GitHub
+
+Git commands
+
+    1. Pushing New Folder to the Remote Repository
+    Go to the Respective file
+        # Navigate to the new folder
+        cd path/to/new/folder
+        # Initialize a new Git repository
+        git init
+
+        # Add all files to the staging area
+        git add .
+        # Commit the changes with a message
+        git commit -m "Initial commit"
+        # Add the remote repository (only if not already set)
+        git remote add origin https://github.com/yourusername/yourrepository.git
+        # Push the changes to the remote repository
+        git push -u origin main
+
+    2. If any changes or updates to the Existing files in the Remote Repository
+        # Navigate to the new folder
+        cd path/to/new/folder
+        git add .
+        git commit -m "Remove Duplicates Code updates"
+        git push origin main
+
+    3. Pull new file from the GitHub and make changes
+        #Navigate to the folder
+        git clone "Repository URL"
+        Start working in the downloaded file
+
+    4. Push the file again back to the GitHub
+        git add .
+        git commit -m "Your Commit message"
+        git push origin main
+    5.Pull only the modified file from GitHub and make changes
+        git stash
+        git pull origin master
+        git commit -m "Commit message"
+        git push origin master
+
+    6.Create a new branch in GitHub
+        # Create and switch to the 'Develop' branch
+          git checkout -b Develop
+          git add .
+          git commit -m "Changes are done in develop branch"
+          git push origin develop
+    7. Pull the changes from the Develop branch from Github
+        git pull origin develop
+        git checkout develop
+        git add .
+        git commit -m "Comited the changes in the Develop Branch"
+    8. Merge changes to Main branch
+        git checkout Main
+        git pull origin Main
+        git merge develop
+    9. Merge conflicts
+        Git will show the error whenever Merge Conflicts occurs.
+        Resolve them Manually and save
+        git checkout develop (Subranch)
+        Git add *
+        Git Commit -m "Changes"
+        git merge master
+
+
+
